@@ -36,7 +36,7 @@ This theme is designed to work for busypastor.org and supply the needs of that w
 
 ## Install
 ```bash
-# 1-- Set up a local instance of Worpress in Local or something.
+# 1-- Set up a local instance of Wordpress in Local or something.
 # 2-- Clone this into your themes folder (as a new theme)
 
 $ git clone https://github.com/Myzwer/The-Busy-Pastor.git

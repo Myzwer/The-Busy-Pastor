@@ -1,6 +1,6 @@
 <?php
 /**
- * Pre-Launch Theme - Functions and Definitions
+ * A Busy Theme - Functions and Definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
