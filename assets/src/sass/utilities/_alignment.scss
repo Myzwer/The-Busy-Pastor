@@ -1,0 +1,83 @@
+/**
+ * Alignment
+ * =================================
+ * - Foundation Overrides
+ * - Positioning
+ * - Text Placements
+ * - Height Locks
+ *
+ *
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+//*********************************************
+//********** FOUNDATION OVERRIDE **************
+//*********************************************
+
+.full-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+  width: 100%;
+}
+
+//*********************************************
+//*************** POSITIONING *****************
+//*********************************************
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-align {
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+}
+
+//This can be used anywhere, but it HAS to have relative positioning above it or it won't work.
+.content-middle {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//*********************************************
+//************* TEXT PLACEMENTS ***************
+//*********************************************
+.left {
+  text-align: left;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.soft-center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+//*********************************************
+//************** HEIGHT LOCKS *****************
+//*********************************************
+
+// These can be used to create height locks to make sure certain things line up
+// They have media queries on them because mobile won't need extra spacing
+@media screen and (min-width: 40em) {
+  .height-lock {
+    height: 100px;
+  }
+}

@@ -1,0 +1,41 @@
+/**
+ * Pagination
+ * =================================
+ * - Play Page
+ *
+ *
+ *
+ *
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  color: $background;
+  text-decoration: none;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  background-color: #f5f17a;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0.75rem;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+  background-color: $yellow;
+}

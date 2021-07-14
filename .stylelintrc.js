@@ -28,7 +28,6 @@ module.exports = {
     "comment-whitespace-inside": "always",
     "selector-pseudo-element-colon-notation": "single",
     "selector-no-vendor-prefix": true,
-    "unit-allowed-list": ["px", "em", "deg"],
     "media-feature-range-operator-space-before": "always",
     "media-feature-range-operator-space-after": "always",
     "media-feature-parentheses-space-inside": "never",

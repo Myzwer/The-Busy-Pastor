@@ -1,0 +1,37 @@
+/**
+ * Cards
+ * =================================
+ * - Video embeds on blog-single pages
+ *
+ *
+ *
+ *
+ *
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+.video-container {
+  border-radius: 9px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  height: 0;
+  mask-image: radial-gradient(#ffffff, #000000);
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  border-radius: 9px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

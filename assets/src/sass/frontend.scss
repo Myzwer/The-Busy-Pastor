@@ -7,7 +7,40 @@
  *
  */
 
-@use 'components/main';
 @use 'fonts/fonts.css';
-
 @use 'foundation/foundation.css';
+
+//*********************************************
+//*************** VARIABLES *******************
+//*********************************************
+
+@use 'variables/colors.scss';
+@use 'variables/font-variables.scss';
+@use 'variables/sizes.scss';
+@use 'components/icon-font'; //technically not a variable, but since it is a font, it needs to be called here
+
+//*********************************************
+//**************** UTILITIES ******************
+//*********************************************
+
+@use 'utilities/typography';
+@use 'utilities/color';
+@use 'utilities/spacing';
+@use 'utilities/alignment';
+@use 'utilities/utility-classes';
+@use 'utilities/visibility';
+@use 'utilities/slants';
+@use 'utilities/images';
+
+//*********************************************
+//*************** COMPONENTS ******************
+//*********************************************
+
+@use 'components/header';
+@use 'components/footer';
+@use 'components/buttons';
+@use 'components/backgrounds';
+@use 'components/forms';
+@use 'components/card';
+@use 'components/video';
+@use 'components/pagination';

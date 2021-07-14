@@ -1,0 +1,41 @@
+/**
+ * Colors
+ * =================================
+ * - Text Colors
+ *
+ *
+ *
+ *
+ *
+ * Background colors are handled in backgrounds.scss
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+//*********************************************
+//*************** TEXT COLORS *****************
+//*********************************************
+
+//might need to change this if you're using a dark theme
+.dark-color-invert {
+  color: $primary;
+}
+
+.light-color-invert {
+  color: $background;
+}
+
+.text-color {
+  color: $primary;
+}
+
+.main-header {
+  color: $primary;
+}
+
+.yellow {
+  color: $yellow;
+}

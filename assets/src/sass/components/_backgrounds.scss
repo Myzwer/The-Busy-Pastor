@@ -1,0 +1,123 @@
+/**
+ * Backgrounds
+ * =================================
+ * - Body Background
+ * - Photo Header
+ * - Video Header
+ * - Color Backgrounds
+ * - Header Heights
+ *
+ *
+ *
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+//*********************************************
+//************** PHOTO HEADER *****************
+//*********************************************
+
+.full-background {
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 120px;
+  //height: 650px;
+  position: relative;
+}
+
+@media screen and (min-width: 64em) {
+  .background-desktop-adjust {
+    padding-bottom: 20%;
+  }
+}
+
+//*********************************************
+//************** VIDEO HEADER *****************
+//*********************************************
+video {
+  height: 100vh;
+  left: 50%;
+  object-fit: cover;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  z-index: -2;
+}
+.viewport-header {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+//*********************************************
+//************ COLOR BACKGROUNDS **************
+//*********************************************
+body {
+  background-color: $background;
+}
+
+.main-background {
+  background-color: $background;
+  color: $primary;
+}
+
+.inverted-background {
+  background-color: $primary;
+  color: $background;
+}
+
+.primary-background {
+  background-color: $background;
+}
+
+//*********************************************
+//*************** HEIGHT LOCKS ****************
+//*********************************************
+
+//this class is used EXCLUSIVELY on the blog page.
+.header-height {
+  //height: 1050px;
+  padding-bottom: 150px;
+}
+
+@media screen and (min-width: 60em) {
+  .header-height {
+    padding-bottom: 20%;
+  }
+}
+
+//this class is used EXCLUSIVELY on the single page.
+.header-height-single {
+  height: 135vh;
+}
+
+@media screen and (min-width: 40em) {
+  .header-height-single {
+    height: 90vh;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .header-height-single {
+    height: 100vh;
+  }
+}
+
+// Policy page.
+.policy-height {
+  height: 500px;
+}
+
+@media screen and (min-width: 40em) {
+  .policy-height {
+    height: 700px;
+  }
+}
