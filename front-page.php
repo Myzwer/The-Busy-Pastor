@@ -119,7 +119,7 @@ get_header(); ?>
                     <h3 class="dark-color-invert"><?php the_field("form_subtitle");?></h3>
                 </div>
 
-                <div class="small-12 medium-12 cell left">
+                <div class="small-12 medium-7 cell left">
                     <?php if (have_posts()) : while (have_posts()) : the_post();
                         the_content();
                     endwhile;

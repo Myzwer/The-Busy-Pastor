@@ -14,21 +14,30 @@
 @import "../variables/sizes";
 @import "../variables/colors";
 
-.wpforms-field-label {
+// Vendor classes, not mine, disabling.
+/* stylelint-disable */
+.signupform_wrapper .gform_title,
+.signupform_wrapper .gform_description {
+  display: none;
+}
+
+.signupform_wrapper .gform_body {
+  margin-top: 10px;
+}
+
+.signupform_wrapper .gfield_label {
   color: $primary;
 }
 
-.wpforms-field-sublabel {
+.signupform_wrapper label {
   color: $primary;
 }
 
-input {
-  background-color: $dark !important; //TODO: Figure out how to make this not Important
+.signupform_wrapper .gfield_required {
+  color: $yellow !important;
 }
 
-div.wpforms-container-full .wpforms-form input[type = "submit"],
-div.wpforms-container-full .wpforms-form button[type = "submit"],
-div.wpforms-container-full .wpforms-form .wpforms-page-button {
+.signupform_wrapper .gform_button {
   align-self: center;
   appearance: none;
 
@@ -70,3 +79,4 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
     border: 0;
   }
 }
+/* stylelint-enable */
