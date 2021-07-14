@@ -111,7 +111,7 @@ module.exports = {
         // * YOU NEED TO CHANGE THIS. VVV
         // * Local is going to output a Site Domain that ends in .local
         // * That needs to be pasted here to get Browersync to work properly.
-        proxy: "prelaunch.local",
+        proxy: "https://the-busy-pastor.local",
         // * CHANGE ME ^^^
       },
 
