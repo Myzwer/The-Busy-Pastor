@@ -171,10 +171,12 @@ add_action('wp_loaded', function () {
             $search = [
                 '/>Home</', // ... >Home< with the brackets, to be sure to target the right Home word
                 '/>Listen</', // ... etc.
+                '/>Coaching</', // ... etc.
             ];
             $replace = [
                 '><span class="icon-icons8-home"></span><',
-                '><span class="icon-icons8-play"></span><'
+                '><span class="icon-icons8-play"></span><',
+                '><span class="icon-icons8-coaching"></span><'
             ];
             $subject = preg_replace($search, $replace, $subject);
             return $subject;

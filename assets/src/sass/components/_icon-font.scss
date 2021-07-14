@@ -3,15 +3,16 @@
   font-family: "icomoon";
   font-style: normal;
   font-weight: normal;
-  src: url("../../webfonts/icomoon.eot?nrmv4");
-  src: url("../../webfonts/icomoon.eot?nrmv4#iefix") format("embedded-opentype"),
-    url("../../webfonts/icomoon.ttf?nrmv4") format("truetype"),
-    url("../../webfonts/icomoon.woff?nrmv4") format("woff"),
-    url("../../webfonts/icomoon.svg?nrmv4#icomoon") format("svg");
+  src: url("../../webfonts/icomoon.eot?xkx502");
+  src: url("../../webfonts/icomoon.eot?xkx502#iefix")
+      format("embedded-opentype"),
+    url("../../webfonts/icomoon.ttf?xkx502") format("truetype"),
+    url("../../webfonts/icomoon.woff?xkx502") format("woff"),
+    url("../../webfonts/icomoon.svg?xkx502#icomoon") format("svg");
 }
 
-[class ^= "icon-"],
-[class *= " icon-"] {
+[class^="icon-"],
+[class*="icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
 
@@ -22,7 +23,6 @@
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
-  speak: never;
   text-transform: none;
 }
 
@@ -31,4 +31,7 @@
 }
 .icon-icons8-play:before {
   content: "\e901";
+}
+.icon-icons8-coaching:before {
+  content: "\e902";
 }
