@@ -16,7 +16,9 @@
     "stylelint": "stylelint assets/src/**/**/*.{css,scss,pcss} --fix",
     "fix-all": "eslint assets/src/js/**/*.js --fix && prettier --write . && stylelint assets/src/**/**/*.{css,scss,pcss} --fix"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/eslint-parser": "^7.14.7",

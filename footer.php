@@ -12,9 +12,6 @@
  */
 
 ?>
-<script>
-    jQuery(document).foundation();
-</script>
 
 
 <!-- FOOTER START -->
