@@ -51,7 +51,7 @@
 
   li {
     float: left;
-    width: 50%;
+    width: 33%;
   }
 
   li span {
@@ -64,7 +64,7 @@
   }
 
   li a {
-    color: white;
+    color: #ffffff;
     display: block;
     padding: 10px 0;
     text-align: center;
@@ -74,7 +74,7 @@
 
   .current-menu-item {
     position: relative;
-    width: 50%;
+    width: 33%;
     z-index: 600;
   }
 
