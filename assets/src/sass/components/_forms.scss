@@ -14,6 +14,8 @@
 @import "../variables/sizes";
 @import "../variables/colors";
 
+/*! purgecss start ignore */
+
 // Vendor classes, not mine, disabling.
 /* stylelint-disable */
 .signupform_wrapper .gform_title,
@@ -81,3 +83,4 @@
   }
 }
 /* stylelint-enable */
+/*! purgecss end ignore */
