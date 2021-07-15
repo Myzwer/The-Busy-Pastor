@@ -122,9 +122,11 @@
   &:hover {
     color: #ffffff;
 
+    /* stylelint-disable */
     &:after {
       width: 110%;
     }
+    /* stylelint-enable */
   }
 }
 
@@ -163,8 +165,10 @@
   &:hover {
     color: #ffffff;
 
+    /* stylelint-disable */
     &:after {
       width: 110%;
     }
+    /* stylelint-enable */
   }
 }

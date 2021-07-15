@@ -11,8 +11,10 @@
     url("../../webfonts/icomoon.svg?xkx502#icomoon") format("svg");
 }
 
+/* stylelint-disable */
 [class^="icon-"],
 [class*="icon-"] {
+  /* stylelint-enable */
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
 

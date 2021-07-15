@@ -13,6 +13,7 @@
 @import "../variables/sizes";
 @import "../variables/colors";
 
+/* stylelint-disable */
 .navigation li a,
 .navigation li a:hover,
 .navigation li.active a,
@@ -39,3 +40,4 @@
 .navigation li.active a {
   background-color: $yellow;
 }
+/* stylelint-enable */
