@@ -1,0 +1,174 @@
+/**
+ * Buttons
+ * =================================
+ * - General Button Styles
+ * - Button Style 1
+ * - Button Style 2
+ *
+ *
+ *
+ *
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+//*********************************************
+//*********** BASIC BUTTON STYLE **************
+//*********************************************
+.btn {
+  align-self: center;
+  appearance: none;
+  background-color: $yellow;
+  border-radius: 0.6em;
+  box-sizing: border-box;
+  color: $background;
+  cursor: pointer;
+  display: flex;
+  font-family: $head-font;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  min-height: 30px;
+  min-width: 120px;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  i {
+    padding-right: 2px;
+  }
+
+  /*  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+  } */
+}
+
+// If you have a lot of text in the button, use this to reduce the padding for more space.
+.padding-button {
+  padding: 15px 20px;
+}
+
+//*********************************************
+//************* BUTTON STYLE 1 ****************
+//*********************************************
+.btn-v1 {
+  background: $yellow;
+  background: rgb(234, 228, 50);
+  background: radial-gradient(
+    circle,
+    rgba(234, 228, 50, 1) 100%,
+    rgba(234, 228, 50, 1) 100%
+  );
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: background 600ms ease-in-out;
+
+  &:hover {
+    background: rgb(240, 238, 191);
+    background: radial-gradient(
+      circle,
+      rgba(240, 238, 191, 1) 0%,
+      rgba(234, 228, 50, 1) 100%
+    );
+  }
+}
+
+//*********************************************
+//************* BUTTON STYLE 2 ****************
+//*********************************************
+.button-width {
+  max-width: 400px;
+}
+
+.btn-v2-light {
+  background-color: transparent;
+  border: 5px solid $primary;
+  border-radius: 8px;
+  color: $primary;
+  display: inline;
+  font-family: $main-font;
+  margin: 7px auto;
+  min-height: 35px;
+  overflow: hidden;
+  padding: 13px 10px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: color 150ms ease-in-out;
+  width: 100%;
+  z-index: 1;
+
+  &:after {
+    background: $dark;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: width 150ms ease-in-out;
+    width: 0;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #ffffff;
+
+    /* stylelint-disable */
+    &:after {
+      width: 110%;
+    }
+    /* stylelint-enable */
+  }
+}
+
+.btn-v2-dark {
+  background-color: transparent;
+  border: 5px solid $background;
+  border-radius: 8px;
+  color: $background;
+  display: inline;
+  font-family: $main-font;
+  margin: 7px auto;
+  min-height: 35px;
+  overflow: hidden;
+  padding: 13px 10px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: color 150ms ease-in-out;
+  width: 100%;
+  z-index: 1;
+
+  &:after {
+    background: $background;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: width 150ms ease-in-out;
+    width: 0;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #ffffff;
+
+    /* stylelint-disable */
+    &:after {
+      width: 110%;
+    }
+    /* stylelint-enable */
+  }
+}

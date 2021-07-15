@@ -1,12 +1,12 @@
 <?php
 /**
- * The header for this theme
+ * The header for A Busy Theme
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Pre-Launch WP
+ * @package A Busy Theme
  */
 
 ?>
@@ -21,7 +21,13 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="leading-normal tracking-normal"
-      style="font-family: 'Source Sans Pro', sans-serif;" <?php body_class(); ?>>
+<div class="sticky header-mobile" id="stickyBottom">
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+</div>
 
-<?php wp_body_open(); ?>
+<div class="desktop-nav">
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+</div>
+
+
+<body <?php body_class(); ?>>

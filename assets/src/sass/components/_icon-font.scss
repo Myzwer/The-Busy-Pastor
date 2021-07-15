@@ -1,0 +1,39 @@
+@font-face {
+  font-display: block;
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../webfonts/icomoon.eot?xkx502");
+  src: url("../../webfonts/icomoon.eot?xkx502#iefix")
+      format("embedded-opentype"),
+    url("../../webfonts/icomoon.ttf?xkx502") format("truetype"),
+    url("../../webfonts/icomoon.woff?xkx502") format("woff"),
+    url("../../webfonts/icomoon.svg?xkx502#icomoon") format("svg");
+}
+
+/* stylelint-disable */
+[class^="icon-"],
+[class*="icon-"] {
+  /* stylelint-enable */
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+}
+
+.icon-icons8-home:before {
+  content: "\e900";
+}
+.icon-icons8-play:before {
+  content: "\e901";
+}
+.icon-icons8-coaching:before {
+  content: "\e902";
+}

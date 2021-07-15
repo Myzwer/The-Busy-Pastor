@@ -13,19 +13,19 @@ This theme is designed to work for busypastor.org and supply the needs of that w
 
 **General**
 - [**Webpack.**](https://classic.yarnpkg.com/en/package/webpack) Built on webpack, this template allows for a modern development workflow + a production ready build.
-- **Minification.** Complete with webpack's native features and CSSNano, this gets your CSS and JS files smaller than things in 40 degree water.
-- [**Prettier.**](https://prettier.io/) An opinionated code formatter. It automagically formats all your code on save so that it always looks the same. This forces everyone's code to look the same, so no more arguing about tabs vs spaces.
-- [**BrowserSync.**](https://browsersync.io/) Browsersync synchronises browsers, URLs, interactions and code changes across devices and automatically refreshes all the browsers on all devices on changes. If you have never used this it'll blow your mind. 
-- [**Sourcemaps.**]() Webpack generates sourcemaps for all js and css files. This helps with debugging simply because when you don't have them enabled your code hides from you like slenderman. 
+- **Minification.** Complete with webpack's native features and CSSNano, this gets minifies and magnles both CSS and JS.
+- [**Prettier.**](https://prettier.io/) An opinionated code formatter. It automagically formats all your code on save so that it always looks the same. 
+- [**BrowserSync.**](https://browsersync.io/) Browsersync synchronises browsers, URLs, interactions and code changes across devices and automatically refreshes all the browsers on all devices on changes. 
+- [**Sourcemaps.**]() Webpack generates sourcemaps for all js and css files, which helps with debugging.
 
 **CSS**
 - [**PostCSS.**](http://postcss.org/) PostCSS allows for some code to be injected after the fact, most noteably...
-- [**Autoprefixer.**](https://github.com/postcss/autoprefixer) Remember those CSS vendor prefixes you didn't add? Well autoprefixer has you covered. 
-- [**TailwindCSS.**](https://tailwindcss.com/) Tailwind is the CSS framework all the kids are tweeting about. If you aren't familiar, it basically generates like 4.8 million CSS classes so you never have to write CSS again. And it cleans up after itself, which is nice.
+- [**Autoprefixer.**](https://github.com/postcss/autoprefixer) Adds vendor prefixes for you. 
+- [**Foundation.**](https://github.com/foundation/foundation-sites/releases/) Foundation is a CSS framework similar to bootstrap. Helps quickly spin up sites.
 - [**Sass.**](https://webpack.js.org/loaders/sass-loader/) Compiles Sass down into CSS so browsers can read it.
 
 **JS**
-- [**BabelJS.**](https://babeljs.io/) Allows you to use next gen Javascript by transpiling it (dumbing it down) to something IE 4 can understand (that claim isn't tested).
+- [**BabelJS.**](https://babeljs.io/) Allows you to use next gen Javascript by transpiling it to ES6.
 
 ## Requirements
 
@@ -36,10 +36,10 @@ This theme is designed to work for busypastor.org and supply the needs of that w
 
 ## Install
 ```bash
-# 1-- Set up a local instance of Worpress in Local or something.
+# 1-- Set up a local instance of Wordpress in Local or something.
 # 2-- Clone this into your themes folder (as a new theme)
 
-$ git clone https://github.com/Myzwer/Pre-Launch-WP.git
+$ git clone https://github.com/Myzwer/The-Busy-Pastor.git
 
 # 2-- Edit the BrowserSync settings in `webpack.config.js`. Ya can't miss it. 
 # 3-- Install yarn and all the project dependencies

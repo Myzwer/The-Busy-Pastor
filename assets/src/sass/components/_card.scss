@@ -1,0 +1,74 @@
+/**
+ * Cards
+ * =================================
+ * - Podcast Cards
+ *
+ *
+ *
+ *
+ *
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+// Podcast Cards
+.podcast-card {
+  background-color: $primary;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  color: $background;
+  padding: 10px;
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+}
+
+// Podcast Cards
+.featured-podcast-card {
+  background-color: $primary;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  color: $background;
+  margin-bottom: 30px;
+
+  img {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+}

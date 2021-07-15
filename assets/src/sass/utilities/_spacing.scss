@@ -1,0 +1,124 @@
+/**
+ * Spacing
+ * =================================
+ * - Both
+ * - Padding
+ * - Margin
+ * - Content Alignment
+ *
+ *
+ *
+ * - This shouldn't be a dump of random edits, but a collection of specific and intentional spacing classes.
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+// Both Styling
+.no-spacing {
+  margin: 0;
+  padding: 0;
+}
+
+.all-spacing {
+  margin: 10px;
+  padding: 10px;
+}
+
+//padding
+.no-padding {
+  padding: 0;
+}
+
+.padding-top {
+  padding-top: 30px;
+}
+
+.padding-top-sm {
+  padding-top: 15px;
+}
+
+.padding-bottom {
+  padding-bottom: 30px;
+}
+.add-padding {
+  padding: 20px;
+}
+
+.lr-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding-bottom-xl {
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .padding-top-mobile {
+    padding-top: 30px;
+  }
+}
+
+//margin
+.no-margin {
+  margin: 0;
+}
+
+.add-margin {
+  margin: 20px;
+}
+
+.margin-top {
+  margin-top: 30px;
+}
+
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
+.lr-margin {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+//when dealing with the slants, you gotta have weird margins sometimes to push and pull elements out of the way. That's what these are for.
+.margin-pull {
+  margin-top: -30px;
+}
+
+.margin-pull-large {
+  margin-top: -40px;
+}
+
+@media screen and (min-width: 64em) {
+  .margin-pull-large {
+    margin-top: -10%;
+  }
+}
+
+//This is used on the blog page to force the buttons down on desktop
+@media screen and (min-width: 64em) {
+  .button-push {
+    margin-top: 15%;
+  }
+}
+
+// Content Adjustment on whole page - Desktop only
+@media screen and (min-width: 40em) {
+  .content {
+    margin-left: 75px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// Mobile content global margin
+@media screen and (max-width: 39.9375em) {
+  .content .mobile-margins {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

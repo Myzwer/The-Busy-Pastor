@@ -1,0 +1,51 @@
+/**
+ * Slants
+ * =================================
+ * - Slanted backgrounds
+ *
+ *
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+.slanted {
+  box-sizing: border-box;
+  padding: 3em 1em;
+  transform: skewY(12deg);
+}
+
+@media screen and (min-width: 40em) {
+  .slanted {
+    padding: 6em 1em;
+    transform: skewY(6deg);
+  }
+}
+
+.slanted > * {
+  margin: auto;
+  max-width: 55em;
+  text-align: left;
+  transform: skewY(-12deg);
+}
+
+@media screen and (min-width: 40em) {
+  .slanted > * {
+    text-align: center;
+    transform: skewY(-6deg);
+  }
+}
+
+.slant-dark {
+  background-color: $background;
+}
+
+.slant-light {
+  background-color: $primary;
+}
+
+.slant-gray {
+  background-color: $dark;
+}

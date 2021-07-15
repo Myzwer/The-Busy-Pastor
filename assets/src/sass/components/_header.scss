@@ -1,0 +1,172 @@
+/**
+ * Header
+ * =================================
+ * The hope is to use this and edit as necessary because editing headers suck.
+ *
+ *
+ */
+
+//********* Bring In Variables ***************
+@import "../variables/font-variables";
+@import "../variables/sizes";
+@import "../variables/colors";
+
+//*********************************************
+//***************** HEADER ********************
+//*********************************************
+
+/* stylelint-disable */
+// MOBILE
+.sticky {
+  box-sizing: border-box;
+  color: $primary;
+  display: block;
+  font-size: 32px;
+  padding: 1px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 99999;
+}
+
+@media screen and (min-width: 40em) {
+  .sticky {
+    display: none;
+  }
+}
+
+#stickyBottom {
+  background-color: $primary;
+  bottom: 0;
+}
+
+.header-mobile {
+  // arrow
+  $arrow-size: 20px;
+  $arrow-color: $dark;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    width: 33%;
+  }
+
+  li span {
+    font-size: 1.4em;
+    padding-top: 3px;
+  }
+
+  span {
+    color: $dark;
+  }
+
+  li a {
+    color: #ffffff;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .current-menu-item {
+    position: relative;
+    width: 33%;
+    z-index: 600;
+  }
+
+  .current-menu-item a {
+    background: $dark;
+    border-radius: 5px;
+    color: $background;
+  }
+
+  .current-menu-item a span {
+    color: $background;
+  }
+
+  .current-menu-item:before {
+    border: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid $arrow-color;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    margin-top: -$arrow-size * 2;
+    position: absolute;
+    top: 1px;
+    transform: translateX(-50%);
+    width: 0;
+    z-index: 900;
+  }
+}
+
+// Desktop
+.desktop-nav {
+  ul {
+    background-color: $primary;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    display: block;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: fixed;
+    //-webkit-transform: translateY(0);
+    width: 75px;
+    z-index: 100;
+
+    a {
+      border: 6px solid $primary;
+      color: $dark;
+      display: block;
+      font-size: 1.7em;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .current-menu-item {
+      background: $dark;
+      color: $primary;
+      overflow: visible;
+
+      a {
+        border: 6px solid $dark;
+        border-radius: 5px;
+      }
+
+      span {
+        color: $background;
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .current-menu-item:before {
+    border: 20px solid transparent;
+    border-left: 20px solid $dark;
+    content: "";
+    display: block;
+    height: 0;
+    margin-left: 75px;
+    margin-top: 12px;
+    position: fixed;
+    width: 0;
+    z-index: 200;
+  }
+}
+
+// Turn off this menu on mobile
+@media screen and (max-width: 39.9375em) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+/* stylelint-enable */

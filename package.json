@@ -17,7 +17,7 @@
     "fix-all": "eslint assets/src/js/**/*.js --fix && prettier --write . && stylelint assets/src/**/**/*.{css,scss,pcss} --fix"
   },
   "dependencies": {
-    "tailwindcss": "^2.2.4"
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

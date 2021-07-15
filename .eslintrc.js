@@ -22,5 +22,6 @@ module.exports = {
     "/vendor/**/**/*.js",
     "/node_modules/**/**/*.js",
     "/assets/public",
+    "/assets/src/js/foundation",
   ],
 };
