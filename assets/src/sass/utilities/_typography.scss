@@ -65,6 +65,18 @@ h3 {
   }
 }
 
+.large-title-text {
+  font-size: 4em;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 64em) {
+  .large-title-text {
+    font-size: 9em;
+    line-height: 1;
+  }
+}
+
 .name-title {
   font-size: 1.4em;
 }
