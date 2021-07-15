@@ -21,13 +21,11 @@ get_header(); ?>
                     <div class="grid-x">
                         <div class="small-2 cell">
                             <h2 class="large-title">
-                                Coaching
+                                <?php the_field('title');?>
                             </h2>
                         </div>
                     </div>
-                    <p class = "padding-top">We are excited to launch Busy Pastor Coaching.Busy Pastor Coaching is for ministry leaders and
-                        pastors who would like 1-on-1 coaching in the areas of ministry and leadership development. Sign
-                        up today for more information about 1-on-1 coaching with Pastor Trent or Pastor Greg.</p>
+                    <p class = "padding-top"><?php the_field('description');?></p>
                 </div>
 
                 <div class="small-12 medium-12 large-offset-1 large-6 margin-top padding-top cell">
