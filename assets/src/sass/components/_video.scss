@@ -14,6 +14,7 @@
 @import "../variables/sizes";
 @import "../variables/colors";
 
+/*! purgecss start ignore */
 .video-container {
   border-radius: 9px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -35,3 +36,4 @@
   top: 0;
   width: 100%;
 }
+/*! purgecss end ignore */
