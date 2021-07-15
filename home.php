@@ -81,7 +81,6 @@ get_header(); ?>
                 <div class="grid-x grid-padding-x grid-margin-x">
                     <?php
                     if (have_posts()) :
-                    query_posts('offset=1');
                     while (have_posts()) :
                     the_post();
                     echo "<div class='small-12 medium-6 margin-bottom podcast-card cell'>";
