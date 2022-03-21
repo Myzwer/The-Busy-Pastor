@@ -24,10 +24,10 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="small-12 cell z-index-1">
+                <div class="small-12 cell z-index-1 relative">
                     <div class="padding-top lr-padding">
                         <div class="grid-x">
-                            <div class="small-10 medium-3 large-offset-1 large-1 cell">
+                            <div class="small-10 medium-4 large-offset-1 large-1 cell">
                                 <h1 class="dark-color-invert large-title"><?php the_field("site_title");?></h1>
                             </div>
 
